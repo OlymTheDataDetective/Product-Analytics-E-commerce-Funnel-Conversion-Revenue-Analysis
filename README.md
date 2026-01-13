@@ -29,6 +29,9 @@ The analysis is performed using the following tables:
 
 ## 🔍 Analysis Breakdown
 
+## Entity Relationship Diagram
+ <img width="788" height="518" alt="Image" src="https://github.com/user-attachments/assets/81246dd9-6172-4f45-b223-9492effa60e9" />
+
 ### 1️⃣ Overall Business Growth
 **Metrics:**
 - Quarterly website sessions
