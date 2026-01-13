@@ -1,205 +1,149 @@
-🛒 E-Commerce Product Analytics: Funnel, Conversion & Revenue Analysis
-📌 Project Overview
+# 🛒 E-Commerce Product Analytics  
+## Funnel, Conversion & Revenue Analysis
 
-This project analyzes the end-to-end product funnel, acquisition efficiency, revenue performance, and cross-sell behavior of an e-commerce business (Maven Fuzzy Factory).
-The goal is to generate data-driven insights that can support investor discussions, marketing decisions, and product strategy.
+## 📌 Project Overview
+This project analyzes the **end-to-end product funnel, acquisition efficiency, revenue performance, and cross-sell behavior** of an e-commerce business (Maven Fuzzy Factory).
 
-The analysis is performed using SQL (SQL Server / T-SQL) on event-level data covering website sessions, orders, pageviews, and order items.
+The objective is to build a **data-driven narrative** that supports **investor discussions, marketing decisions, and product strategy** using SQL-based analytics.
 
-🎯 Business Objective
+---
 
-Evaluate business growth and efficiency trends
+## 🎯 Business Objectives
+- Track **business growth** over time
+- Measure **conversion and monetization efficiency**
+- Analyze **traffic channel performance**
+- Evaluate **product-level revenue, margin, and seasonality**
+- Assess **cross-sell impact after new product launches**
 
-Understand traffic channel performance
+---
 
-Measure conversion and monetization quality
+## 🧱 Dataset Description
+The analysis is performed using the following tables:
 
-Analyze product-level revenue, margin, and seasonality
+- `website_sessions` – session-level acquisition data  
+- `orders` – order-level transaction data  
+- `order_items` – item-level revenue and cost data  
+- `website_pageviews` – page-level user behavior data  
 
-Assess impact of new product launches and cross-selling
+---
 
-🧱 Dataset Description
+## 🔍 Analysis Breakdown
 
-The project uses the following core tables:
+### 1️⃣ Overall Business Growth
+**Metrics:**
+- Quarterly website sessions
+- Quarterly order volume
 
-website_sessions – session-level traffic and acquisition data
+**Purpose:**  
+Understand long-term demand growth and business scale.
 
-orders – order-level transaction data
+---
 
-order_items – item-level revenue and cost data
+### 2️⃣ Efficiency & Monetization Analysis
+**Metrics:**
+- Session-to-order conversion rate  
+- Average revenue per order  
+- Average revenue per session  
 
-website_pageviews – page-level user behavior data
+**Purpose:**  
+Evaluate whether the business is becoming **more efficient and higher quality**, not just bigger.
 
-🔍 Analysis Breakdown
-1️⃣ Overall Business Growth
+---
 
-Question: How has the business grown over time?
+### 3️⃣ Traffic Channel Performance
+**Channels Analyzed:**
+- Google Search – Non-Brand  
+- Bing Search – Non-Brand  
+- Brand Search (overall)  
+- Organic Search  
+- Direct Type-In Traffic  
 
-Metrics:
+**Purpose:**  
+Identify which acquisition channels drive growth and how their contributions change over time.
 
-Total website sessions (quarterly)
+---
 
-Total orders (quarterly)
+### 4️⃣ Channel Conversion Rate Trends
+**Metrics:**
+- Quarterly session-to-order conversion rate by channel  
 
-Insight Enabled:
+**Purpose:**  
+Compare **acquisition quality** across channels and highlight optimization periods.
 
-Tracks high-level demand and order growth across the business lifecycle.
+---
 
-2️⃣ Efficiency & Monetization Analysis
+### 5️⃣ Product Revenue & Margin Trends
+**Metrics:**
+- Monthly revenue by product  
+- Monthly margin by product  
+- Total revenue and margin  
 
-Question: Is the business becoming more efficient over time?
+**Insights:**
+- Clear holiday seasonality (Nov–Dec)
+- Product-specific demand cycles (e.g., Valentine’s impact)
 
-Metrics:
+---
 
-Session-to-order conversion rate
+### 6️⃣ Product Page Funnel Analysis
+**Metrics:**
+- Sessions reaching `/products` page  
+- Click-through rate to next page  
+- Conversion rate from product page to order  
 
-Average revenue per order
+**Purpose:**  
+Measure improvements in **product discovery and funnel efficiency** over time.
 
-Average revenue per session
+---
 
-Why it matters:
+### 7️⃣ Cross-Sell Performance Analysis
+**Context:**  
+Product 4 was launched on **Dec 05, 2014** (previously cross-sell only).
 
-Focuses on quality and efficiency, not just traffic growth.
+**Metrics:**
+- Cross-sell frequency by primary product  
+- Cross-sell rate per product  
 
-Useful for investor readiness and profitability analysis.
+**Key Findings:**
+- Product 1 has the strongest cross-sell performance  
+- Product 1 ↔ Product 4 show strong affinity  
+- Product 2 frequently cross-sells with Product 3  
 
-3️⃣ Traffic Channel Performance
+---
 
-Question: Which acquisition channels are driving orders and how are they evolving?
+## 📊 Key Business Insights
+- Google Non-Brand is the largest traffic driver and should continue to scale
+- Brand, Organic, and Direct channels show the highest conversion efficiency
+- Product expansion increases cross-sell opportunities
+- Funnel optimizations led to measurable conversion improvements
+- Seasonality plays a significant role in revenue and margin trends
 
-Channels Analyzed:
+---
 
-Google Search – Non-Brand
+## 🛠️ Tools & Technologies
+- SQL Server (T-SQL)
+- Temporary tables & subqueries
+- Conditional aggregation
+- Funnel & conversion analysis
+- Revenue & margin calculations
 
-Bing Search – Non-Brand
+---
 
-Brand Search (overall)
+## 🚀 How to Use This Project
+1. Clone the repository  
+2. Run the SQL scripts sequentially in SQL Server  
+3. Review outputs to understand growth, efficiency, and product performance  
+4. Use insights for case studies, interviews, or portfolio presentations  
 
-Organic Search
+---
 
-Direct Type-In Traffic
+## 📌 Ideal For
+- Data Analyst / Product Analyst portfolios  
+- SQL interview preparation  
+- Product analytics & funnel analysis practice  
+- Business storytelling with data  
 
-Outcome:
+---
 
-Quarterly order volume by channel
-
-Identification of scalable vs high-intent channels
-
-4️⃣ Channel Conversion Rate Trends
-
-Question: How efficient is each channel at converting sessions into orders?
-
-Metrics:
-
-Quarterly session-to-order conversion rate by channel
-
-Key Findings:
-
-Significant conversion improvements observed in early 2013
-
-Brand, organic, and direct traffic consistently show higher efficiency
-
-5️⃣ Product Revenue & Margin Trends
-
-Question: How do products contribute to revenue and margin over time?
-
-Metrics:
-
-Monthly revenue by product
-
-Monthly margin by product
-
-Total revenue and margin
-
-Insights:
-
-Clear seasonality patterns (Nov–Dec holiday spikes)
-
-Product-specific demand cycles (e.g., Valentine’s season impact)
-
-6️⃣ Product Page Funnel Analysis
-
-Question: Has the /products page become more effective over time?
-
-Metrics:
-
-Sessions reaching /products page
-
-Click-through rate to next page
-
-Conversion rate from product page to order
-
-Why it matters:
-
-Measures improvements in product discovery and UX
-
-Shows funnel optimization impact after product expansion
-
-7️⃣ Cross-Sell Performance Analysis
-
-Question: How well do products cross-sell after launching Product 4?
-
-Approach:
-
-Analyze orders since Product 4 launch (Dec 05, 2014)
-
-Measure cross-sell frequency and rate by primary product
-
-Key Findings:
-
-Product 1 has the strongest cross-sell performance
-
-Product 1 ↔ Product 4 show strong cross-sell affinity
-
-Product 2 frequently cross-sells with Product 3
-
-📊 Key Business Insights
-
-Google Non-Brand is the largest traffic driver and should continue to be scaled
-
-Brand, Organic, and Direct traffic deliver the highest conversion efficiency
-
-Product expansion increases cross-sell opportunities
-
-Seasonal demand patterns significantly impact revenue and margin
-
-Funnel improvements led to measurable conversion gains over time
-
-🛠️ Tools & Technologies
-
-SQL Server (T-SQL)
-
-Temporary tables & subqueries
-
-Conditional aggregation
-
-Funnel & cohort-style analysis
-
-Conversion rate calculations
-
-Revenue & margin analysis
-
-🚀 How to Use This Project
-
-Clone the repository
-
-Run the SQL scripts sequentially in SQL Server
-
-Review outputs to understand growth, efficiency, and product performance
-
-Use insights for case studies, interviews, or portfolio presentations
-
-📌 Ideal For
-
-Data Analyst / Product Analyst portfolios
-
-SQL interview preparation
-
-Product analytics & funnel analysis practice
-
-Business storytelling with data
-
-📬 Author
-
-Olympia Devi Gurumayum
+## 👤 Author
+**Olympia Gurumayum**  
 Data Analyst | SQL • Product Analytics • Funnel Analysis
