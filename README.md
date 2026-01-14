@@ -12,7 +12,7 @@ The objective is to build a **data-driven narrative** that supports **investor d
 - Track **business growth** over time
 - Measure **conversion and monetization efficiency**
 - Analyze **traffic channel performance**
-- Evaluate **product-level revenue, margin, and seasonality**
+- Evaluate **product-level revenue, margin and seasonality**
 - Assess **cross-sell impact after new product launches**
 
 ---
@@ -83,7 +83,7 @@ Compare **acquisition quality** across channels and highlight optimization perio
 
 **Insights:**
 - Clear holiday seasonality (Nov–Dec)
-- Product-specific demand cycles (e.g., Valentine’s impact)
+- Product-specific demand cycles (e.g. Valentine’s impact)
 
 ---
 
@@ -134,8 +134,8 @@ Product 4 was launched on **Dec 05, 2014** (previously cross-sell only).
 ## 🚀 How to Use This Project
 1. Clone the repository  
 2. Run the SQL scripts sequentially in SQL Server  
-3. Review outputs to understand growth, efficiency, and product performance  
-4. Use insights for case studies, interviews, or portfolio presentations  
+3. Review outputs to understand growth, efficiency and product performance  
+4. Use insights for case studies, interviews or portfolio presentations  
 
 ---
 
