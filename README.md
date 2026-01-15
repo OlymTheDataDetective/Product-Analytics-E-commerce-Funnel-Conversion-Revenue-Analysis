@@ -27,7 +27,22 @@ The analysis is performed using the following tables:
 
 ---
 
-## 🔍 Analysis Breakdown
+## Project Flow
+
+This project follows a structured analytics approach, progressing from high-level business performance to detailed product insights:
+
+1. **Overall Business Performance**  
+   Analyze long-term trends in sessions, orders, revenue, and key efficiency metrics.
+
+2. **Traffic & Channel Analysis**  
+   Evaluate acquisition sources and marketing channels to understand traffic quality and conversion performance.
+
+3. **User Behavior Analysis**  
+   Examine new vs repeat users, engagement patterns, and retention behavior.
+
+4. **Product & Funnel Analysis**  
+   Analyze product-level performance, funnel conversion rates, and drop-off points to identify optimization opportunities.
+   
 
 ## Data Flow & Table Relationships
 
@@ -66,6 +81,9 @@ website_sessions
 
 ### Entity Relationship Diagram
  <img width="788" height="518" alt="Image" src="https://github.com/user-attachments/assets/81246dd9-6172-4f45-b223-9492effa60e9" />
+
+
+## 🔍 Analysis Breakdown
 
 ### 1️⃣ Overall Business Growth
 **Metrics:**
