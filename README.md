@@ -29,6 +29,41 @@ The analysis is performed using the following tables:
 
 ## 🔍 Analysis Breakdown
 
+## Data Flow & Table Relationships
+
+This analysis is structured around the end-to-end e-commerce user journey.
+The starting point of the analysis is the website session, with all downstream
+events linked back to it.
+
+The data flow follows this sequence:
+
+website_sessions
+→ website_pageviews
+→ orders
+→ order_items
+→ order_item_refunds
+
+### Table Descriptions
+
+- **website_sessions**  
+  Entry point of the user journey. Contains traffic source, campaign, device type,
+  and session start information. All analysis begins from this table.
+
+- **website_pageviews**  
+  Captures user behavior within each session, including landing pages,
+  navigation paths, bounce behavior, and funnel progression.
+
+- **orders**  
+  Represents completed purchase events and is linked to sessions to calculate
+  session-to-order conversion rates.
+
+- **order_items**  
+  Contains product-level details for each order, enabling product performance
+  and cross-sell analysis.
+
+- **order_item_refunds**  
+  Tracks refunded items and supports net revenue and post-purchase analysis.
+
 ### Entity Relationship Diagram
  <img width="788" height="518" alt="Image" src="https://github.com/user-attachments/assets/81246dd9-6172-4f45-b223-9492effa60e9" />
 
